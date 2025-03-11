@@ -1,6 +1,6 @@
-# FinanceApp - Controle Financeiro Pessoal
+# Financial-App - Controle Financeiro Pessoal
 
-![FinanceApp Preview](assets/dashboard-preview.png)
+![FinanceApp Preview](assets/preview.png)
 
 Financia-APP é um aplicativo web completo e moderno para gerenciar suas finanças pessoais de maneira intuitiva e segura. Com uma interface elegante e funcionalidades robustas, este sistema te ajuda a monitorar receitas, despesas e saldo, oferecendo insights para tomadas de decisão financeiras mais inteligentes.
 
