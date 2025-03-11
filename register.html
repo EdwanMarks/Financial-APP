@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="register-bg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="card mt-5 shadow">
+          <div class="card-body p-4">
+            <div class="text-center mb-4">
+              <i class="fa-solid fa-user-plus fa-3x mb-3" style="color: #4361ee;"></i>
+              <h3 class="text-center">Cadastro</h3>
+            </div>
+            <form id="registerForm">
+              <div class="mb-3 position-relative">
+                <label for="name" class="form-label">
+                  <i class="fa-solid fa-user me-1"></i> Nome Completo
+                </label>
+                <input type="text" class="form-control" id="name" required placeholder="Seu nome completo">
+                <div class="invalid-feedback">
+                  <i class="fa-solid fa-circle-exclamation me-1"></i> Por favor, insira seu nome completo.
+                </div>
+              </div>
+              
+              <div class="mb-3 position-relative">
+                <label for="email" class="form-label">
+                  <i class="fa-solid fa-envelope me-1"></i> Email
+                </label>
+                <input type="email" class="form-control" id="email" required placeholder="seu@email.com">
+                <div class="invalid-feedback">
+                  <i class="fa-solid fa-circle-exclamation me-1"></i> Por favor, insira um email válido.
+                </div>
+              </div>
+              
+              <div class="mb-3 position-relative">
+                <label for="password" class="form-label">
+                  <i class="fa-solid fa-lock me-1"></i> Senha
+                </label>
+                <input type="password" class="form-control" id="password" required placeholder="••••••••">
+                <span id="togglePassword" class="position-absolute end-0 top-50 translate-middle-y me-3 mt-2" style="cursor: pointer; color: #6c757d;">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </span>
+                <div class="invalid-feedback">
+                  <i class="fa-solid fa-circle-exclamation me-1"></i> A senha deve ter pelo menos 8 caracteres.
+                </div>
+              </div>
+              
+              <div class="mb-3 position-relative">
+                <label for="confirmPassword" class="form-label">
+                  <i class="fa-solid fa-lock me-1"></i> Confirmar Senha
+                </label>
+                <input type="password" class="form-control" id="confirmPassword" required placeholder="••••••••">
+                <div class="invalid-feedback">
+                  <i class="fa-solid fa-circle-exclamation me-1"></i> As senhas não coincidem.
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <div class="password-strength">
+                  <small class="text-muted">Força da senha:</small>
+                  <div class="progress mt-1" style="height: 5px;">
+                    <div id="password-strength-meter" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">
+                  <i class="fa-solid fa-check me-1"></i> Eu concordo com os <a href="#" class="terms-link">Termos de Uso</a>
+                </label>
+                <div class="invalid-feedback">
+                  Você deve concordar com os termos para continuar.
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary w-100">
+                <i class="fa-solid fa-user-plus me-2"></i> Criar Conta
+              </button>
+              
+              <hr>
+              
+              <div class="text-center">
+                <a href="index.html" class="text-decoration-none">
+                  <i class="fa-solid fa-arrow-left me-1"></i> Já possui uma conta? Faça login
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="register.js"></script>
+</body>
+</html>
